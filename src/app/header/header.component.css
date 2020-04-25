@@ -1,0 +1,7 @@
+.header {
+    /* max-width: 800px; */
+    min-width: 300px;
+    height: 150px;
+    margin: auto;
+    background-color: rgb(6, 94, 177);
+}
