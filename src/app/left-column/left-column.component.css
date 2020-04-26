@@ -4,7 +4,7 @@
     text-align:center;
   }
 
-.menu a {
+.menu .button {
     background-color:#e5e5e5;
     padding:8px;
     margin-top:7px;
@@ -13,8 +13,8 @@
     color:black;
   }
 
-  .menu a:hover {
-    background-color: #aaaaaa;;  
+  .menu .button:hover {
+    background-color: #aaaaaa;
   }
 
   @media only screen and (max-width:620px) {

@@ -1,4 +1,20 @@
-<div class="right">
-    <h2>About</h2>
-    <p>Dear Olga, please help me to find an idea for this site</p>
+<div class="right-column-wrapper">
+    <div *ngFor="let message of messages">
+        <app-messages [title]="message.title" [text]="message.text" [isWarning]="message.warning"></app-messages>
+    </div>
+    <div class="input">
+        <h2 style="text-align: center;">Add message</h2>
+        <form class="form" [formGroup]="newMessage">
+            <mat-form-field class="example-full-width">
+              <mat-label>Title</mat-label>
+              <input matInput [(ngModel)]="title" name="title" formControlName="title">
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              <mat-label>Leave a comment</mat-label>
+              <textarea matInput [(ngModel)]="text" name="text" formControlName="text"></textarea>
+            </mat-form-field>
+            <button class="submit" mat-raised-button color="primary" (click)="addMessage()">Add</button>
+        </form> 
+    </div>
 </div>

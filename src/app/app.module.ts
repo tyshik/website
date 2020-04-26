@@ -10,6 +10,15 @@ import { BodyComponent } from './body/body.component';
 import { LeftColumnComponent } from './left-column/left-column.component';
 import { RightColumnComponent } from './right-column/right-column.component';
 import { CenterColumnComponent } from './center-column/center-column.component';
+import { MessagesComponent } from './messages/messages.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+// import { AngularFireDatabaseModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -20,11 +29,20 @@ import { CenterColumnComponent } from './center-column/center-column.component';
     BodyComponent,
     LeftColumnComponent,
     RightColumnComponent,
-    CenterColumnComponent
+    CenterColumnComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatFormFieldModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    // AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

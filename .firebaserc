@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "website-8ad3c": {
+      "hosting": {
+        "website": [
+          "website-8ad3c"
+        ]
+      }
+    }
+  }
+}
