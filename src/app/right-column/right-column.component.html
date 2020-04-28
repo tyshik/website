@@ -1,7 +1,10 @@
 <div class="right-column-wrapper">
-    <div *ngFor="let message of messages">
-        <app-messages [title]="message.title" [text]="message.text" [isWarning]="message.warning"></app-messages>
+    <div class="messages" >
+        <div *ngFor="let message of messages">
+            <app-messages [title]="message.title" [text]="message.text" [isWarning]="message.warning"></app-messages>
+        </div>
     </div>
+   
     <div class="input">
         <h2 style="text-align: center;">Add message</h2>
         <form class="form" [formGroup]="newMessage">
