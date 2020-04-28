@@ -1,7 +1,32 @@
 .header {
-    background-color:#e5e5e5;
-    padding:15px;
-    text-align:center;
-    font-family:Verdana;
-    color:#aaaaaa;
+    /* background-color:#673AB7; */
+    background-image: url("/../../assets/images/5.gif");
+    background-position: center;
+    box-sizing:border-box;
+    position: relative;
+    height: 180px;
+    /* padding: 15px; */
+    /* text-align:center; */
+    /* font-family:Verdana; */
+    /* color:white; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    /* z-index: 1; */
+    
+    /* margin-bottom: 50px; */
+} 
+
+.zdyn {
+    margin-left: 35px;
+    width: 180px;
+    height: 180px;
+    background-image: url("/../../assets/images/7.png");
+    background-position: center;
+    background-size: cover;
 }
+
+@media only screen and (max-width:900px) {
+    /* For mobile phones: */
+    .zdyn {
+      display: none;
+    }
+  }
